@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "ea34eba4-6fbe-4024-95f1-c85aec459693",
+		"name": "Vehicles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/v1/vehicles/identify",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vehicles\": [\r\n         {\"id\": \"vehicle1\",\r\n          \"frame\":{\r\n              \"material\": \"maruthi\"\r\n              },\r\n          \"wheels\": [\r\n              {\r\n              \"position\": \"left rear\",\r\n              \"material\": \"maruthi\"\r\n              },\r\n              {\r\n              \"position\": \"right rear\",\r\n              \"material\": \"maruthi\"\r\n              },\r\n              {\r\n              \"position\": \"front\",\r\n              \"material\": \"maruthi\"\r\n              }          \r\n          ],\r\n          \"powertrain\":\"human\"\r\n         },\r\n\t\t   {\"id\": \"vehicle3\",\r\n          \"frame\":{\r\n              \"material\": \"metal\"\r\n              },\r\n          \"wheels\": [\r\n              {\r\n              \"position\": \"front\",\r\n              \"material\": \"metal\"\r\n              },\r\n              {\r\n              \"position\": \"rear\",\r\n              \"material\": \"metal\"\r\n              }          \r\n          ],\r\n          \"powertrain\":\"internal combustion\"\r\n         },\r\n\t\t    {\"id\": \"vehicle4\",\r\n          \"frame\":{\r\n              \"material\": \"metal\"\r\n              },\r\n          \"wheels\": [\r\n              {\r\n              \"position\": \"left rear\",\r\n              \"material\": \"metal\"\r\n              },\r\n\t\t\t  {\r\n              \"position\": \"left front\",\r\n              \"material\": \"metal\"\r\n              },\r\n\t\t\t  {\r\n              \"position\": \"right front\",\r\n              \"material\": \"metal\"\r\n              },\r\n              {\r\n              \"position\": \"right rear\",\r\n              \"material\": \"metal\"\r\n              }          \r\n          ],\r\n          \"powertrain\":\"internal combustion\"\r\n         },\r\n         {\"id\": \"vehicle2\",\r\n          \"frame\":{\r\n              \"material\": \"metal\"\r\n              },\r\n          \"wheels\": [\r\n              {\r\n              \"position\": \"rear\",\r\n              \"material\": \"metal\"\r\n              },\r\n              {\r\n              \"position\": \"front\",\r\n              \"material\": \"metal\"\r\n              }         \r\n          ],\r\n          \"powertrain\":\"human\"\r\n         }         \r\n     ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/vehicles/identify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"vehicles",
+						"identify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/vehicles/add",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "9f16b0d4-cdce-4144-b915-e50494103a9c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "use",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicles\": [\r\n    {\r\n      \"vehicleType\": \"Big Wheel\",\r\n      \"frame\": {\r\n        \"material\": \"plastic\"\r\n      },\r\n      \"wheels\": [\r\n        {\r\n          \"position\": \"left rear\",\r\n          \"material\": \"plastic\"\r\n        },\r\n        {\r\n          \"position\": \"right rear\",\r\n          \"material\": \"plastic\"\r\n        },\r\n        {\r\n          \"position\": \"front\",\r\n          \"material\": \"plastic\"\r\n        }\r\n      ],\r\n      \"powertrain\": \"human\"\r\n    },\r\n    {\r\n      \"vehicleType\": \"Bicycle\",\r\n      \"frame\": {\r\n        \"material\": \"metal\"\r\n      },\r\n      \"wheels\": [\r\n        {\r\n          \"position\": \"front\",\r\n          \"material\": \"metal\"\r\n        },\r\n        {\r\n          \"position\": \"rear\",\r\n          \"material\": \"metal\"\r\n        }\r\n      ],\r\n      \"powertrain\": \"human\"\r\n    },\r\n    {\r\n      \"vehicleType\": \"Motorcycle\",\r\n      \"frame\": {\r\n        \"material\": \"metal\"\r\n      },\r\n      \"wheels\": [\r\n        {\r\n          \"position\": \"rear\",\r\n          \"material\": \"metal\"\r\n        },\r\n        {\r\n          \"position\": \"front\",\r\n          \"material\": \"metal\"\r\n        }\r\n      ],\r\n      \"powertrain\": \"internal combustion\"\r\n    },\r\n    {\r\n      \"vehicleType\": \"Car\",\r\n      \"frame\": {\r\n        \"material\": \"metal\"\r\n      },\r\n      \"wheels\": [\r\n        {\r\n          \"position\": \"left rear\",\r\n          \"material\": \"metal\"\r\n        },\r\n        {\r\n          \"position\": \"left front\",\r\n          \"material\": \"metal\"\r\n        },\r\n        {\r\n          \"position\": \"right front\",\r\n          \"material\": \"metal\"\r\n        },\r\n        {\r\n          \"position\": \"right rear\",\r\n          \"material\": \"metal\"\r\n        }\r\n      ],\r\n      \"powertrain\": \"internal combustion\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/vehicles/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"vehicles",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/vehicles/modify",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"vehicleType\": \"Big Wheel\",\r\n      \"frame\": {\r\n        \"material\": \"maruthi\"\r\n      },\r\n      \"wheels\": [\r\n        {\r\n          \"position\": \"left rear\",\r\n          \"material\": \"maruthi\"\r\n        },\r\n        {\r\n          \"position\": \"right rear\",\r\n          \"material\": \"maruthi\"\r\n        },\r\n        {\r\n          \"position\": \"front\",\r\n          \"material\": \"maruthi\"\r\n        }\r\n      ],\r\n      \"powertrain\": \"human\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/vehicles/modify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"vehicles",
+						"modify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/vehicles/remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"vehicleType\": \"Big Wheel\",\r\n      \"frame\": {\r\n        \"material\": \"maruthi\"\r\n      },\r\n      \"wheels\": [\r\n        {\r\n          \"position\": \"left rear\",\r\n          \"material\": \"maruthi\"\r\n        },\r\n        {\r\n          \"position\": \"right rear\",\r\n          \"material\": \"maruthi\"\r\n        },\r\n        {\r\n          \"position\": \"front\",\r\n          \"material\": \"maruthi\"\r\n        }\r\n      ],\r\n      \"powertrain\": \"human\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/vehicles/remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"vehicles",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

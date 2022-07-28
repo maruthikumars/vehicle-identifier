@@ -1,0 +1,84 @@
+{
+  "vehicles": [
+    {
+      "vehicleType": "Big Wheel",
+      "frame": {
+        "material": "plastic"
+      },
+      "wheels": [
+        {
+          "position": "left rear",
+          "material": "plastic"
+        },
+        {
+          "position": "right rear",
+          "material": "plastic"
+        },
+        {
+          "position": "front",
+          "material": "plastic"
+        }
+      ],
+      "powertrain": "human"
+    },
+    {
+      "vehicleType": "Bicycle",
+      "frame": {
+        "material": "metal"
+      },
+      "wheels": [
+        {
+          "position": "front",
+          "material": "metal"
+        },
+        {
+          "position": "rear",
+          "material": "metal"
+        }
+      ],
+      "powertrain": "human"
+    },
+    {
+      "vehicleType": "Motorcycle",
+      "frame": {
+        "material": "metal"
+      },
+      "wheels": [
+        {
+          "position": "rear",
+          "material": "metal"
+        },
+        {
+          "position": "front",
+          "material": "metal"
+        }
+      ],
+      "powertrain": "internal combustion"
+    },
+    {
+      "vehicleType": "Car",
+      "frame": {
+        "material": "metal"
+      },
+      "wheels": [
+        {
+          "position": "left rear",
+          "material": "metal"
+        },
+        {
+          "position": "left front",
+          "material": "metal"
+        },
+        {
+          "position": "right front",
+          "material": "metal"
+        },
+        {
+          "position": "right rear",
+          "material": "metal"
+        }
+      ],
+      "powertrain": "internal combustion"
+    }
+  ]
+}

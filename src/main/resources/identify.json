@@ -1,0 +1,80 @@
+{
+  "vehicles": [
+    {"id": "vehicle1",
+      "frame":{
+        "material": "plastic"
+      },
+      "wheels": [
+        {
+          "position": "left rear",
+          "material": "plastic"
+        },
+        {
+          "position": "right rear",
+          "material": "plastic"
+        },
+        {
+          "position": "front",
+          "material": "plastic"
+        }
+      ],
+      "powertrain":"human"
+    },
+    {"id": "vehicle3",
+      "frame":{
+        "material": "metal"
+      },
+      "wheels": [
+        {
+          "position": "front",
+          "material": "metal"
+        },
+        {
+          "position": "rear",
+          "material": "metal"
+        }
+      ],
+      "powertrain":"internal combustion"
+    },
+    {"id": "vehicle4",
+      "frame":{
+        "material": "metal"
+      },
+      "wheels": [
+        {
+          "position": "left rear",
+          "material": "metal"
+        },
+        {
+          "position": "left front",
+          "material": "metal"
+        },
+        {
+          "position": "right front",
+          "material": "metal"
+        },
+        {
+          "position": "right rear",
+          "material": "metal"
+        }
+      ],
+      "powertrain":"internal combustion"
+    },
+    {"id": "vehicle2",
+      "frame":{
+        "material": "metal"
+      },
+      "wheels": [
+        {
+          "position": "rear",
+          "material": "metal"
+        },
+        {
+          "position": "front",
+          "material": "metal"
+        }
+      ],
+      "powertrain":"human"
+    }
+  ]
+}

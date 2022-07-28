@@ -1,0 +1,45 @@
+{
+    "vehicles": [
+         {"id": "vehicle1",
+          "frame":{
+              "material": "plastic"
+              },
+          "wheels": [
+              {
+              "position": "left rear",
+              "material": "plastic"
+              },
+              {
+              "position": "right rear",
+              "material": "plastic"
+              },
+              {
+              "position": "front",
+              "material": "plastic"
+              }          
+          ],
+          "powertrain":"human"
+         },
+         {"id": "vehicle2",
+          "frame":{
+              "material": "metal"
+              },
+          "wheels": [
+              {
+              "position": "rear",
+              "material": "metal"
+              },
+              {
+              "position": "front",
+              "material": "metal"
+              },
+            {
+              "position": "front",
+              "material": "metal"
+            }
+          ],
+          "powertrain":"human"
+         }         
+     ]
+}
+
